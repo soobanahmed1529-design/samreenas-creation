@@ -1,229 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Samreena's Creation</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
-}
+<link rel="stylesheet" href="style.css">
 
-body{
-background:#faf7f4;
-color:#333;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-header{
-background:#7a0046;
-color:white;
-padding:20px;
-text-align:center;
-}
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-header h1{
-font-size:40px;
-}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-.hero{
-padding:80px 20px;
-text-align:center;
-background:linear-gradient(135deg,#7a0046,#c2185b);
-color:white;
-}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-.hero h2{
-font-size:45px;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:20px;
-}
-
-.products{
-padding:60px 10%;
-}
-
-.products h2{
-text-align:center;
-color:#7a0046;
-margin-bottom:40px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-text-align:center;
-}
-
-.card h3{
-color:#7a0046;
-margin-bottom:10px;
-}
-
-.about{
-padding:60px 10%;
-text-align:center;
-background:#fff;
-}
-
-.about h2{
-color:#7a0046;
-margin-bottom:20px;
-}
-
-.contact{
-background:#7a0046;
-color:white;
-padding:50px;
-text-align:center;
-}
-
-footer{
-background:#50002d;
-color:white;
-padding:15px;
-text-align:center;
-}
-  <section class="products">
-
-<h2>Our Collection</h2>
-
-<div class="gallery">
-
-<div class="category" onclick="openGallery('cut')">
-<img src="images/cutpieces/cover.jpg">
-<div class="overlay">
-<h3>Cut Pieces</h3>
-</div>
-</div>
-
-<div class="category" onclick="openGallery('stock')">
-<img src="images/stocklots/cover.jpg">
-<div class="overlay">
-<h3>Stock Lots</h3>
-</div>
-</div>
-
-<div class="category" onclick="openGallery('laces')">
-<img src="images/laces/cover.jpg">
-<div class="overlay">
-<h3>Laces</h3>
-</div>
-</div>
-
-<div class="category" onclick="openGallery('patches')">
-<img src="images/patches/cover.jpg">
-<div class="overlay">
-<h3>Patches</h3>
-</div>
-</div>
-
-<div class="category" onclick="openGallery('dupattas')">
-<img src="images/dupattas/cover.jpg">
-<div class="overlay">
-<h3>Dupattas</h3>
-</div>
-</div>
-
-</div>
-
-</section>
-
-<div id="popup">
-
-<span onclick="closeGallery()">✖</span>
-
-<img id="popupImage">
-
-<div class="buttons">
-<button onclick="previous()">◀</button>
-<button onclick="next()">▶</button>
-</div>
-
-</div>
-</style>
 </head>
 
 <body>
 
+<!--================ HEADER ================-->
+
 <header>
-<h1>Samreena's Creation</h1>
-<p>Quality • Elegance • Fashion</p>
+
+<div class="logo">
+Samreena's Creation
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#products">Products</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
 </header>
 
-<section class="hero">
-<h2>Branded Fabrics & Fashion Accessories</h2>
-<p>Stock Lots • Cut Pieces • Laces • Patches • Dupattas</p>
-</section>
+<!--================ HERO ================-->
 
-<section class="products">
-<h2>Our Products</h2>
+<section id="home" class="hero">
 
-<div class="grid">
+<div class="hero-content">
 
-<div class="card">
-<h3>Branded Stock Lots</h3>
-<p>Premium branded fabrics at affordable prices.</p>
-</div>
+<h1>Welcome to Samreena's Creation</h1>
 
-<div class="card">
-<h3>Cut Pieces</h3>
-<p>High-quality cut pieces for tailoring and boutiques.</p>
-</div>
-
-<div class="card">
-<h3>Laces</h3>
-<p>Beautiful designer laces for every outfit.</p>
-</div>
-
-<div class="card">
-<h3>Patches</h3>
-<p>Elegant embroidered patches and embellishments.</p>
-</div>
-
-<div class="card">
-<h3>Dupattas</h3>
-<p>Stylish and trendy dupattas in multiple designs.</p>
-</div>
-
-</div>
-</section>
-
-<section class="about">
-<h2>About Us</h2>
 <p>
-Samreena's Creation specializes in branded stock lot fabrics,
-cut pieces, laces, patches, and beautiful dupattas.
-We provide quality products for boutiques, resellers,
-tailors, and fashion lovers.
+
+Premium Branded Stock Lots, Cut Pieces, Laces,
+Designer Patches and Elegant Dupattas.
+
 </p>
+
+<a href="#products" class="btn">
+
+Explore Collection
+
+</a>
+
+</div>
+
 </section>
 
-<section class="contact">
-<h2>Contact Us</h2>
-<p>WhatsApp: +923142995079</p>
-<p>Instagram: https://www.instagram.com/samreena_creation/#$0</p>
-<p>Facebook: https://www.facebook.com/profile.php?id=100064200842123$0</p>
+<!--================ ABOUT ================-->
+
+<section id="about">
+
+<div class="container">
+
+<h2>About Us</h2>
+
+<p>
+
+Welcome to <strong>Samreena's Creation</strong>, your destination for premium fashion fabrics and accessories.
+
+We specialize in branded stock lot fabrics, designer cut pieces, elegant laces, embroidered patches and beautiful dupattas.
+
+Our goal is to provide quality products at competitive prices for boutiques, tailors, resellers and fashion enthusiasts.
+
+</p>
+
+</div>
+
 </section>
 
-<footer>
-© 2026 Samreena's Creation. All Rights Reserved.
-</footer>
+<!--================ PRODUCTS ================-->
 
-</body>
-</html>
-"""
+<section id="products">
+
+<h2 class="section-title">
+
+Our Collection
+
+</h2>
+
+<div class="product-grid">
+
+<!-- Stock Lots -->
+
+<div class="product-card" onclick="openGallery('stock')">
+
+<img src="images/stocklots/cover.jpg" alt="Stock Lots">
+
+<div class="product-info">
+
+<h3>Branded Stock Lots</h3>
+
+<p>Premium branded fabric collections.</p>
+
+</div>
+
+</div>
+
+<!-- Cut Pieces -->
+
+<div class="product-card" onclick="openGallery('cutpieces')">
+
+<img src="images/cutpieces/cover.jpg" alt="Cut Pieces">
+
+<div class="product-info">
+
+<h3>Cut Pieces</h3>
+
+<p>Beautiful fabrics for every occasion.</p>
+
+</div>
+
+</div>
+
+<!-- Laces -->
+
+<div class="product-card" onclick="openGallery('laces')">
+
+<img src="images/laces/cover.jpg" alt="Laces">
+
+<div class="product-info">
+
+<h3>Laces</h3>
+
+<p>Designer lace collections.</p>
+
+</div>
+
+</div>
