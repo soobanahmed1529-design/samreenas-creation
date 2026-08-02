@@ -98,6 +98,63 @@ color:white;
 padding:15px;
 text-align:center;
 }
+  <section class="products">
+
+<h2>Our Collection</h2>
+
+<div class="gallery">
+
+<div class="category" onclick="openGallery('cut')">
+<img src="images/cutpieces/cover.jpg">
+<div class="overlay">
+<h3>Cut Pieces</h3>
+</div>
+</div>
+
+<div class="category" onclick="openGallery('stock')">
+<img src="images/stocklots/cover.jpg">
+<div class="overlay">
+<h3>Stock Lots</h3>
+</div>
+</div>
+
+<div class="category" onclick="openGallery('laces')">
+<img src="images/laces/cover.jpg">
+<div class="overlay">
+<h3>Laces</h3>
+</div>
+</div>
+
+<div class="category" onclick="openGallery('patches')">
+<img src="images/patches/cover.jpg">
+<div class="overlay">
+<h3>Patches</h3>
+</div>
+</div>
+
+<div class="category" onclick="openGallery('dupattas')">
+<img src="images/dupattas/cover.jpg">
+<div class="overlay">
+<h3>Dupattas</h3>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<div id="popup">
+
+<span onclick="closeGallery()">✖</span>
+
+<img id="popupImage">
+
+<div class="buttons">
+<button onclick="previous()">◀</button>
+<button onclick="next()">▶</button>
+</div>
+
+</div>
 </style>
 </head>
 
